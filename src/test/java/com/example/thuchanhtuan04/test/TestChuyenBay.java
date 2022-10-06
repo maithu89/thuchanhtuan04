@@ -14,5 +14,9 @@ public class TestChuyenBay {
         System.out.println(chuyenBayRepository.findChuyenBayByGaDen("DAD"));
     }
 
+    @Test
+    void cau4(){
+        System.out.println(chuyenBayRepository.findChuyenBayByDoDai());
+    }
 
 }
