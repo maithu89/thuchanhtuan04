@@ -13,5 +13,7 @@ public interface MayBayRepository extends CrudRepository<MayBay, Integer> {
     @Query("select mb.loai from MayBay mb where mb.tamBay > 10000")
     List<String> findLoaiMayBayByTamBay();
 
-
+//cau 07
+@Query("select count(mb) from MayBay mb where mb.loai like 'Boeing%'")
+int findLoaiMayBay();
 }
