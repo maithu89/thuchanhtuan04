@@ -22,4 +22,7 @@ public interface ChuyenBayRepository extends CrudRepository<ChuyenBay, String> {
     @Query("select cb from ChuyenBay cb where cb.gaDi = 'SGN' and cb.gaDen = 'BMV'")
     List<ChuyenBay> findChuyenBayByGaDiVaGaDen();
 
+    //cau 06
+    @Query("select count(cb) from ChuyenBay cb where cb.gaDi = 'SGN'")
+    int findChuyenBayByGaDi();
 }
