@@ -14,5 +14,4 @@ public class TestMayBay {
         System.out.println(mayBayRepository.findLoaiMayBayByTamBay());
     }
 
-
 }
