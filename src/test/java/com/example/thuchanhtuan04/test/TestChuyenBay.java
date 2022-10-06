@@ -19,4 +19,9 @@ public class TestChuyenBay {
         System.out.println(chuyenBayRepository.findChuyenBayByDoDai());
     }
 
+    @Test
+    void cau5(){
+        System.out.println(chuyenBayRepository.findChuyenBayByGaDiVaGaDen());
+    }
+
 }
