@@ -22,4 +22,9 @@ public class TestNhanVien {
         System.out.println(nhanVienRepository.getMaByLoaiMayBay());
     }
 
+    @Test
+    void cau10(){
+        System.out.println(nhanVienRepository.findNhanVienByMaMB(747));
+    }
+
 }
